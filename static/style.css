@@ -8,5 +8,20 @@ html{
     color: white;
 
 }
+#tableauProduit{
+
+    margin: auto;
+    border: solid;
+}
+th{
+    border: solid;
+}
+th, td {
+  padding: 15px;
+  text-align: center;}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
 
 

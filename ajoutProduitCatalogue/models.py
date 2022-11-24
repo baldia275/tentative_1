@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+
+# Creation de la table "produits"
+class Produit(models.Model):
+    nom = models.CharField(max_length=100)
+    prix = models.DecimalField(max_digits=5, decimal_places=2)
+    description = models.TextField(max_length=1000)

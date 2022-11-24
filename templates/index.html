@@ -12,10 +12,17 @@
 
      <!-- accueil des html "enfants" dans la page -->
         {% block content %}
-
+ <div>
+        <a href= {% url "afficher_produit" %}>Afficher les produits</a>
+    </div>
+    <div>
+        <a href={% url "ajouter_produit" %}>Ajouter un produit</a>
+    </div>
 
         {% endblock %}
+
     </div>
+
     <div id="footer"><h3 >Crée par Ahmed</h3></div>
 
 

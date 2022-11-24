@@ -18,6 +18,7 @@ from ajoutProduitCatalogue import views
 from django.urls import path
 
 urlpatterns = [
-    path('', views.index),
-    path('listeProduits', views.listeProduits) ,
+    path('', views.index, name="index"),
+    path('listeProduits', views.listeProduits, name="afficher_produit") ,
+    path('ajout',views.ajoutProduit, name="ajouter_produit")
 ]

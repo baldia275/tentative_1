@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "index.html" %} <!-- déclaration d'héritier de la page index -->
+{% block content %}
+    <div id="contenu"><h2 >Ajouter un produit :</h2></div>
+    <form method="post" action="listeProduits.html">
+        <label>Nom : <input name="nom" > </label>
+        <br>
+        <br>
+        <label>Description : <input name="description" > </label>
+                <br>
+        <br>
 
-</body>
-</html>
+        <label>Prix : <input name="prix"  placeholder="0.00" required min="0" value="0" step="0.1"> </label>
+    <br>
+    <br>
+    </form>
+
+{% endblock %}

@@ -13,3 +13,7 @@ def listeProduits(request):
     contenu = {"Produits": tous_les_produits}
 
     return render(request, "listeProduits.html", contenu)
+
+def ajoutProduit(request):
+
+    return render(request,"ajoutProduit.html")

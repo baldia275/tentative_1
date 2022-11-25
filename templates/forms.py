@@ -4,7 +4,7 @@ from ajoutProduitCatalogue.models import *
 
 
 class frmAjoutProduit(ModelForm):
-    class Meta:  # créer une classe dans une classe$
+    class Meta:  # créer une classe dans une classe
         model = Produit
         fields = ['nom', 'prix', 'description']
         labels = {

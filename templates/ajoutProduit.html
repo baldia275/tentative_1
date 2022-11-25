@@ -1,12 +1,13 @@
 {% extends "index.html" %} <!-- déclaration d'héritier de la page index -->
 {% block content %}
      <div id="contenu"><h2 >Ajouter un produit :</h2></div>
-    <form method = "POST" action="{% url "ajouter_produit" %}">
+    <form method = "POST" action="{% url "ajouter_produit" %}" id="formAjout">
     {{ formulaire.as_p }}
 
         <input type="submit" name="Envoyer !" id="envoyer">
         <input type="reset" name="Recommencer !" id="recomencer">    <br>
     <br>
     </form>
+    <div><a href={% url "index" %}> Retour à l'accueil </a></div>
 
 {% endblock %}
